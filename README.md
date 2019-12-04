@@ -49,11 +49,11 @@ This is done by force-loading the plans outside of the MATsim "Scenario" class, 
 
 Ultimately, we allow users to load resources a single time, and reuse them for multiple simulation scenarios, without forcing a recreation of the objects used in simulations. 
 
-The result is saving on average, between 20%-30% of computation time, as well as a linear reduction in storage space, scaling with number of simulations.
+The result is saving on average, between **20%-30% of computation time**, as well as a linear reduction in storage space, scaling with number of simulations.
 
 *Any questions or concerns regarding this process can be directed to austinmichne@gmail.com*
 
-Below is an Example Configuration for a run. 
+**Below is an Example Configuration for a run.**
 
 *Note that all MATsim options are parsed and available for use, though the MATsim syntax is not used.*
 
