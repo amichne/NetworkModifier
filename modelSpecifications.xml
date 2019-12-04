@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model>
+    <specificationMeta>
+        <plans path="/Users/austinmichne/Research/ChesterIcarus/NetworkModification/data/plans/SWUS_Plans_FINAL.xml"/>
+        <config path="/Users/austinmichne/Research/ChesterIcarus/NetworkModification/data/scenarios/scenario_1a/SWUSFINAL_Config_Scenario1a.xml"/>
+        <events path="/Users/austinmichne/Research/ChesterIcarus/NetworkModification/data/scenarios/scenario_1a/Disruption Inputs_Scenario1a.csv"/>
+        <inputNetwork path="/Users/austinmichne/Research/ChesterIcarus/NetworkModification/data/networks/SWUSFULLFINAL_NET.xml"/>
+    </specificationMeta>
+    <global>
+        <threads value="6"/>
+    </global>
+    <controler>
+        <overwriteFileSetting value="deleteDirectoryIfExists"/>
+        <outputDirectory value="output/"/>
+    </controler>
+    <network>
+        <timeVariant value="false"/>
+    </network>
+    <qsim>
+        <numberOfThreads value="10"/>
+    </qsim>
+    <planParameters>
+        <activities>
+            <activity>
+                <type value="home"/>
+                <earliestEndTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="work"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="university"/>
+                <scoringThisActivityAtAll value="true"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="school"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="pure_escort"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="rideshare"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="other_escort"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="shopping"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="other_maintenence"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="ride_share"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="food"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="breakfast"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="lunch"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="dinner"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="visiting"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="other_discretionary"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="special_event"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="work_business"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="work_lunch"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="work_other"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="work_related"/>
+                <openingTime value="14400.0"/>
+            </activity>
+            <activity>
+                <type value="asu_related"/>
+                <openingTime value="14400.0"/>
+            </activity>
+        </activities>
+        <modes>
+            <mode>
+                <type value="car"/>
+            </mode>
+            <mode>
+                <type value="sov"/>
+            </mode>
+            <mode>
+                <type value="hov2_driver"/>
+            </mode>
+            <mode>
+                <type value="hov3_driver"/>
+            </mode>
+            <mode>
+                <type value="hov_passenger"/>
+            </mode>
+            <mode>
+                <type value="taxi"/>
+            </mode>
+            <mode>
+                <type value="conv_transit_walk_access"/>
+            </mode>
+            <mode>
+                <type value="conv_transit_knr"/>
+            </mode>
+            <mode>
+                <type value="conv_transit_pnr"/>
+            </mode>
+            <mode>
+                <type value="prem_transit_walk_access"/>
+            </mode>
+            <mode>
+                <type value="prem_transit_knr"/>
+            </mode>
+            <mode>
+                <type value="prem_transit_pnr"/>
+            </mode>
+            <mode>
+                <type value="school_bus"/>
+            </mode>
+        </modes>
+    </planParameters>
+</model>
